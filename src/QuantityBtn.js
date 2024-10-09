@@ -53,7 +53,7 @@ const QuantityBtn = ({ productInfo }) => {
 
     return (
         <div>
-            {(numInCart == 0) ? 
+            {(numInCart === 0) ? 
                 <div onClick={handleAddToCart}>Add to cart</div> :
                 <div>
                     <span onClick={handleAddToCart}>+</span>
