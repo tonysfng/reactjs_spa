@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './ProductList.module.css';
+//import styles from './ProductList.module.css';
 import { Link } from 'react-router-dom';
 import Title from './Title';
 import QuantityBtn from './QuantityBtn';
