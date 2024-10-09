@@ -33,7 +33,7 @@ const ProductDetail = () => {
       })
       setProductDetail(productInfo);
     });
-  }, []);
+  }, [params.id]);
   
   return (
     <div>
