@@ -6,7 +6,7 @@ import { CartContext } from './CartContext';
 
 const Checkout = () => {
 
-  let {cartItems, setCartItems} = useContext(CartContext);
+  let {cartItems} = useContext(CartContext);
 
   // let caritem = {
   //   caritems : [
