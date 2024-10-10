@@ -48,7 +48,7 @@ const Checkout = () => {
                     <div key={item.id}>
                       <tr>
                         <td>
-                            <Link to={`/product/${product.id}`}>
+                            <Link to={`/product/${item.id}`}>
                                 <img src={process.env.PUBLIC_URL + '/img/' + item.image} alt={item.name} />
                             </Link>
                         </td>
