@@ -29,7 +29,7 @@ const ProductDetail = () => {
     .then(response => response.json())
     .then(data => {
       let productInfo = data.find((element) => {
-        return element.id = parseInt(params.id)
+        return element.id === parseInt(params.id)
       })
       setProductDetail(productInfo);
     });
