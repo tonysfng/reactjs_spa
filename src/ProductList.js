@@ -60,7 +60,7 @@ const ProductList = () => {
           <React.Fragment key={product.id}>
             {product.name} - ${product.price.toFixed(2)}
             <Link to={`/product/${product.id}`}>{product.description}
-              <img src={process.env.PUBLIC_URL + '/img/' + {product.image}} alt={product.name} />
+              <img src={process.env.PUBLIC_URL + '/img/' + product.image} alt={product.name} />
             </Link>
             <QuantityBtn productInfo={product} />
           </React.Fragment>
