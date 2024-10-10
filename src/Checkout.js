@@ -47,6 +47,11 @@ const Checkout = () => {
                   {cartItems.map((item) => (
                     <div key={item.id}>
                       <tr>
+                        <td>
+                            <Link to={`/product/${product.id}`}>
+                                <img src={process.env.PUBLIC_URL + '/img/' + item.image} alt={item.name} />
+                            </Link>
+                        </td>
                         <td style={{ width: '20000px', textAlign: 'center' }}>{item.name}</td>
                         <td style={{ width: '500px', textAlign: 'center' }}>{item.description}</td>
                         <td style={{ width: '1000px', textAlign: 'right' }}>${item.price.toFixed(2)}</td>
