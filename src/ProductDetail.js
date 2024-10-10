@@ -40,7 +40,7 @@ const ProductDetail = () => {
       { productDetail && 
         <div>
           <Title text="Product Detail" />
-          <img src={process.env.PUBLIC_URL + '/logo192.png'} alt={productDetail.name} width="400"/>
+          <img src={process.env.PUBLIC_URL + '/img/' + productDetail.image} alt={productDetail.name} width="400"/>
           <p>Name : {productDetail.name}</p> 
           <p>Price : ${productDetail.price.toFixed(2)}</p>      
           <p>Description : {productDetail.description}</p>      
